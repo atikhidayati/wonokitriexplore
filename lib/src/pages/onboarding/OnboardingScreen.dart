@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:introduction_screen/introduction_screen.dart';
+import 'package:wonokitriexplore/src/pages/login/login.dart';
 
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({Key? key}) : super(key: key);
@@ -64,7 +65,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
             child: ElevatedButton(
               onPressed: () {
-
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return LoginPage();
+                }));
               },
               style: ElevatedButton.styleFrom(
                 minimumSize: const Size.fromHeight(55), backgroundColor: const Color(0xFF8BC342),
