@@ -1,14 +1,11 @@
 import 'package:flutter/material.dart';
+
 class ButtonComponent extends StatelessWidget {
   var title;
   Color? color;
   double? size;
   VoidCallback? onPressed;
-  ButtonComponent({
-    this.title,
-    this.color,
-    this.size,
-  this.onPressed});
+  ButtonComponent({this.title, this.color, this.size, this.onPressed});
 
   @override
   Widget build(BuildContext context) {
