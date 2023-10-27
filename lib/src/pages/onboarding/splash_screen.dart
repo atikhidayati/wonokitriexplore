@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wonokitriexplore/screens/OnboardingScreen.dart';
+import 'package:wonokitriexplore/src/pages/onboarding/OnboardingScreen.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
@@ -16,7 +16,6 @@ class SplashScreen extends StatelessWidget {
 
     return Scaffold(
       body: Stack(children: [
-        Image.asset('assets/images/bgsplashscreen.png'),
         Center(
           child: SafeArea(
               child: Column(
@@ -28,7 +27,7 @@ class SplashScreen extends StatelessWidget {
                   Image.asset(
                     'assets/images/logo.png',
                     height: 229,
-                  )
+                  ),
                 ],
               )),
         )
