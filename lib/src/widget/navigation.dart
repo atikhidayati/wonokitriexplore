@@ -1,5 +1,6 @@
 import 'package:floating_bottom_navigation_bar/floating_bottom_navigation_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:wonokitriexplore/src/pages/colors.dart';
 import '../pages/mainmenu/account_screen.dart';
 import '../pages/mainmenu/home_screen.dart';
 import '../pages/mainmenu/maps_screen.dart';
@@ -50,9 +51,9 @@ class _DashboardPageState extends State<DashboardPage> {
         itemBorderRadius: 25,
         currentIndex: navIndex,
         padding: const EdgeInsets.only(bottom: 15, top: 15),
-        backgroundColor: const Color(0xFF8BC342),
+        backgroundColor: kPrimaryColor,
         selectedBackgroundColor: Colors.white,
-        selectedItemColor: const Color(0xFF8BC342),
+        selectedItemColor: kPrimaryColor,
         items: [
           FloatingNavbarItem(
             icon: Icons.home,
