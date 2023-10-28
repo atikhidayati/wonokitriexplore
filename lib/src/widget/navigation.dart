@@ -1,10 +1,10 @@
 import 'package:floating_bottom_navigation_bar/floating_bottom_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:wonokitriexplore/src/dashboard/account_screen.dart';
-import 'package:wonokitriexplore/src/dashboard/home_screen.dart';
-import 'package:wonokitriexplore/src/dashboard/maps_screen.dart';
-import 'package:wonokitriexplore/src/dashboard/payment_screen.dart';
-import 'package:wonokitriexplore/src/dashboard/wishlist_screen.dart';
+import '../pages/mainmenu/account_screen.dart';
+import '../pages/mainmenu/home_screen.dart';
+import '../pages/mainmenu/maps_screen.dart';
+import '../pages/mainmenu/payment_screen.dart';
+import '../pages/mainmenu/wishlist_screen.dart';
 
 class DashboardPage extends StatefulWidget {
   const DashboardPage({super.key});
@@ -36,6 +36,7 @@ class _DashboardPageState extends State<DashboardPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       //If you want to show body behind the navbar, it should be true
       backgroundColor: Colors.white,
       body: returnScreen(navIndex),
@@ -48,8 +49,10 @@ class _DashboardPageState extends State<DashboardPage> {
         borderRadius: 25,
         itemBorderRadius: 25,
         currentIndex: navIndex,
-        backgroundColor: Colors.green,
+        padding: const EdgeInsets.only(bottom: 15, top: 15),
+        backgroundColor: const Color(0xFF8BC342),
         selectedBackgroundColor: Colors.white,
+        selectedItemColor: const Color(0xFF8BC342),
         items: [
           FloatingNavbarItem(
             icon: Icons.home,
