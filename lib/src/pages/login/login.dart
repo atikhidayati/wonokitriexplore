@@ -10,14 +10,15 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('First Screen'),
+        title: const Text(''),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            ButtonComponent(title: "Simpan",color: Colors.blue,size: MediaQuery.of(context).size.width -50,onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) {
-              return OnboardingScreen();
+            Container(),
+            ButtonComponent(title: "Login",color: Colors.green,size: MediaQuery.of(context).size.width -50,onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) {
+              return const OnboardingScreen();
             }));},),
           ],
         ),
