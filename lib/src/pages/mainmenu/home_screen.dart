@@ -26,6 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           color: const Color(0xff8BC342),
                           height: 200,
                           alignment: Alignment.center,
+                          child: const SearchBar(),
                         ),
                       ),
                     ],
